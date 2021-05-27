@@ -2,17 +2,12 @@ import bookcover from './bookcover';
 import synopsis from './synopsis';
 import review from './review';
 import purchase from './purchase_location';
+import searchbar from './searchbar';
 import './App.css';
 
 function App() {
-  return (
-    <div class="searchbar">
-    </div>,
-    bookcover(),
-    synopsis(),
-    review(),
-    purchase()
-  );
+  const temp = [<synopsis />,<bookcover />, <review />,<searchbar />,<purchase />]
+  return (temp);
 }
 
 export default App;
