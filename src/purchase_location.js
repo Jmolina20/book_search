@@ -1,7 +1,7 @@
-function purchase (){
+function Purchase (){
     return (
         <div class="purchase">where to buy</div>
     )
 }
 
-export default purchase;
+export default Purchase;

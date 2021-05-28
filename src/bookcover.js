@@ -1,8 +1,8 @@
-function bookcover(){
+function Bookcover(){
     return(
         <div class="bookcover">bookcover</div>
     )
 
 }
 
-export default bookcover;
+export default Bookcover;

@@ -1,7 +1,7 @@
-function synopsis(){
+function Synopsis(){
     return(
         <div class="synopsis">Synopsis</div>
     )
 }
 
-export default synopsis;
+export default Synopsis;
