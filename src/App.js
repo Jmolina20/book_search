@@ -1,12 +1,19 @@
-import Bookcover from './bookcover';
-import Synopsis from './synopsis';
-import Review from './review';
-import Purchase from './purchase_location';
 import Searchbar from './searchbar';
+import Nav from './nav_bar';
+import Results from './results'
+import Process from './results_process'
 
 function App() {
-  const temp = [<Searchbar /> , <Synopsis /> , <Bookcover />, <Review /> , <Purchase />]
-  return (temp);
+  return (
+    <div id="text">
+      <Nav />
+      <Results />
+      <Process />
+    </div>
+  );
 }
 
 export default App;
+
+
+//api functions to use: book api

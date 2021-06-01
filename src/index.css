@@ -1,19 +1,4 @@
-.purchase{
-  border: solid;
-  border-color: blue;
+body{
+  background:burlywood;
 }
 
-.bookcover{
-  border: solid;
-  border-color: red;
-}
-
-.synopsis{
-  border: solid;
-  border-color: green;
-}
-
-.review{
-  border: solid;
-  border-color: black;
-}
