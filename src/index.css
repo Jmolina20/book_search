@@ -1,4 +1,17 @@
 body{
-  background:burlywood;
+  background:burlywood
+  
 }
 
+
+#nav{
+  margin-left: 45%;
+  margin-right: 55%;
+  text-align: center;
+  position:fixed;
+  top:0;
+}
+
+#book{
+  background-color: bisque;
+}

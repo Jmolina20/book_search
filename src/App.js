@@ -1,13 +1,13 @@
-import Searchbar from './searchbar';
+//import Searchbar from './searchbar';
+//import Results from './results'
 import Nav from './nav_bar';
-import Results from './results'
 import Process from './results_process'
 
 function App() {
   return (
     <div id="text">
       <Nav />
-      <Results />
+      
       <Process />
     </div>
   );

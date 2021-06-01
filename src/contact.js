@@ -1,9 +1,9 @@
-function contact_info(){
+function bookstore(){
     const info = <div>
-        <h2>Name: Julian Molina</h2>
-        <h2>address: 123 milky way galaxy</h2>
+        <h2><a href="https://www.thriftbooks.com/">Thrift Books</a></h2>
+        <h2><a href="https://www.betterworldbooks.com/">Better World Books</a></h2>
     </div>
     return (info)
 }
 
-export default contact_info;
+export default bookstore;

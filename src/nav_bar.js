@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import contact_info from "./contact";
+import bookstore from "./contact";
 
 function Nav() {
-    const nav_bar = <Router><nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="./contact">Contact</Link></li>
+    const nav_bar = <Router><nav id="nav">
+        
+          <Link to="/">Home</Link>
+          <Link to="./contact">Alternative bookstores</Link>
           
-        </ul>
+        
     </nav>
     
-    <Route path="/contact" component={contact_info}/>
+    <Route path="/contact" component={bookstore}/>
 
     </Router>
     return (nav_bar)

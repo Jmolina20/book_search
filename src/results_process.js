@@ -19,6 +19,7 @@ class Process extends Component{
         event.preventDefault();
         let temp = this.state.title;
         let api="https://openlibrary.org/search.json?title=" + temp;
+        let pic_api = "https://covers.openlibrary.org/b/id/240727-S.jpg"
         fetch(api)
         .then((response)=>{
             return response.json()
@@ -33,6 +34,16 @@ class Process extends Component{
             // console.log(data.docs[0].author_alternative_name[1]);
             // console.log(data.docs[0].first_sentence[0])
         })
+        
+        
+        fetch (pic_api)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+           console.log(data)
+        })
+
 
     } 
 
@@ -44,15 +55,15 @@ class Process extends Component{
 
     render(){
         return(<div><div>
-        <div>
+        <div >
             <form onSubmit={this.search_books}>
-              <label>Book title search</label> 
+              <label>Book title search    </label> 
               <input type="text" value={this.state.title} onChange={this.handleChange}/>
             </form>
         </div>
-            <p>Title: {this.state.title}</p>
-            <p>Author: {this.state.author}</p>
-            <p>Sentence: {this.state.sentence}</p>
+            <p id="book">Title: {this.state.title}</p><br/>
+            <p id="book">Author: {this.state.author}</p><br/>
+            <p id="book">Sentence: {this.state.sentence}</p>
         </div>
         </div>
         )
